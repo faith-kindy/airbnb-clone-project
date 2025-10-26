@@ -237,3 +237,53 @@ Allows users to search for properties based on location, price range, amenities,
 
 Description:
 Provides administrators with tools to manage users, properties, and transactions across the platform. Admins can monitor activity, handle disputes, and ensure compliance with platform policies. This feature maintains smooth operation and security of the system.
+
+# API Security
+1. Authentication
+
+Description:
+Implements secure login and registration using encrypted passwords (e.g., bcrypt or Django’s built-in authentication system). Multi-factor authentication (MFA) may also be added for extra security.
+Why it’s crucial:
+Ensures that only legitimate users can access their accounts, protecting sensitive personal data and preventing unauthorized access.
+
+2. Authorization
+
+Description:
+Defines user roles (e.g., Admin, Host, Guest) and controls access to specific resources based on these roles. For example, only hosts can manage property listings, and only admins can access system-wide data.
+Why it’s crucial:
+Prevents unauthorized users from performing restricted actions, maintaining data integrity and platform fairness.
+
+3. Data Encryption
+
+Description:
+Encrypts sensitive information such as user passwords, payment details, and personal data both in transit (HTTPS) and at rest (database encryption).
+Why it’s crucial:
+Protects confidential information from being intercepted or leaked during data transfer or database breaches.
+
+4. Rate Limiting and Brute Force Protection
+
+Description:
+Limits the number of login or API requests from a single IP address within a specific time frame.
+Why it’s crucial:
+Prevents brute-force attacks and protects the platform from denial-of-service (DoS) attacks that could crash the system or expose vulnerabilities.
+
+5. Secure Payment Handling
+
+Description:
+Integrates trusted payment gateways (e.g., PayPal, Stripe) to handle transactions securely. Payment details are never stored directly on the platform’s servers.
+Why it’s crucial:
+Ensures financial data remains safe and complies with payment industry standards (e.g., PCI-DSS), protecting users from fraud.
+
+6. Input Validation and Sanitization
+
+Description:
+Checks and cleans all user inputs (such as search queries, reviews, or form submissions) to prevent SQL injection and cross-site scripting (XSS) attacks.
+Why it’s crucial:
+Prevents hackers from exploiting input fields to inject malicious code or gain unauthorized access to the system.
+
+7. Regular Security Updates and Monitoring
+
+Description:
+Applies frequent security patches, monitors server activity, and performs vulnerability scans. Logs are analyzed to detect and respond to suspicious activities early.
+Why it’s crucial:
+Maintains long-term security and reliability by minimizing exposure to newly discovered threats.
