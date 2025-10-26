@@ -287,3 +287,22 @@ Description:
 Applies frequent security patches, monitors server activity, and performs vulnerability scans. Logs are analyzed to detect and respond to suspicious activities early.
 Why it’s crucial:
 Maintains long-term security and reliability by minimizing exposure to newly discovered threats.
+
+# CI/CD Pipeline
+Continuous Integration and Continuous Deployment (CI/CD) Pipelines
+
+Description:
+CI/CD pipelines automate the process of building, testing, and deploying code. Continuous Integration (CI) ensures that code changes from multiple contributors are automatically tested and merged into the main branch without breaking existing functionality. Continuous Deployment (CD) automatically delivers these tested changes to production or staging environments.
+
+Why It’s Important:
+Implementing CI/CD pipelines ensures faster development cycles, reduces manual errors, and maintains consistent quality across updates. It helps detect bugs early, improves collaboration between developers, and ensures new features are safely deployed with minimal downtime.
+
+Common Tools Used:
+
+GitHub Actions: Automates workflows for testing, building, and deploying code directly from your repository.
+
+Docker: Containerizes applications for consistent environments across development, testing, and production.
+
+Jenkins: Provides advanced automation and integration for building and deploying projects.
+
+CircleCI / Travis CI: Cloud-based CI/CD tools for automated testing and deployment.
