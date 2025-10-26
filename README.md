@@ -80,3 +80,124 @@ Purpose: Adds interactivity and dynamic behavior to the website, such as animati
 
 Version control and collaboration tools for developers.
 Purpose: Manage project versions, track code changes, and collaborate effectively with team members
+
+# Database Design
+1. User
+
+Description: Represents individuals who use the platform — both hosts and guests.
+
+Key Fields:
+
+user_id – Unique identifier for each user.
+
+name – Full name of the user.
+
+email – User’s email address (used for login and communication).
+
+role – Defines if the user is a host, guest, or admin.
+
+date_joined – The date the user created their account.
+
+Relationships:
+
+A user (as a host) can list multiple properties.
+
+A user (as a guest) can make multiple bookings.
+
+A user can write multiple reviews for properties they’ve booked.
+
+2. Property
+
+Description: Represents a home, apartment, or space listed by a host for rent.
+
+Key Fields:
+
+property_id – Unique identifier for each property.
+
+host_id – Foreign key referencing the user_id of the host.
+
+title – Name or short description of the property.
+
+location – Address or area where the property is located.
+
+price_per_night – Cost to stay per night.
+
+Relationships:
+
+A property belongs to one user (host).
+
+A property can have multiple bookings.
+
+A property can have multiple reviews.
+
+ 3. Booking
+
+Description: Represents a reservation made by a guest for a specific property.
+
+Key Fields:
+
+booking_id – Unique identifier for each booking.
+
+property_id – Foreign key referencing the property being booked.
+
+guest_id – Foreign key referencing the user (guest) who made the booking.
+
+start_date – Check-in date.
+
+end_date – Check-out date.
+
+status – Booking status (e.g., Pending, Confirmed, Cancelled).
+
+Relationships:
+
+A booking belongs to one property.
+
+A booking is made by one user (guest).
+
+A booking may have one payment record.
+
+4. Payment
+
+Description: Represents payment details for a booking.
+
+Key Fields:
+
+payment_id – Unique identifier for the payment.
+
+booking_id – Foreign key referencing the related booking.
+
+amount – Total amount paid.
+
+payment_date – Date when the payment was made.
+
+payment_method – Method used (e.g., credit card, PayPal).
+
+Relationships:
+
+A payment belongs to one booking.
+
+Each booking has one associated payment.
+
+ 5. Review
+
+Description: Represents feedback provided by guests after completing a booking.
+
+Key Fields:
+
+review_id – Unique identifier for each review.
+
+property_id – Foreign key referencing the reviewed property.
+
+guest_id – Foreign key referencing the user who wrote the review.
+
+rating – Numeric rating (e.g., 1–5).
+
+comment – Textual feedback from the guest.
+
+Relationships:
+
+A review belongs to one property.
+
+A review is written by one user (guest).
+
+A property can have many review
