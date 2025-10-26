@@ -201,3 +201,39 @@ A review belongs to one property.
 A review is written by one user (guest).
 
 A property can have many review
+
+# Feature Breakdown
+1. User Management
+
+Description:
+Handles user registration, authentication, and profile management. It allows individuals to sign up as hosts or guests, log in securely, and update personal details. This feature ensures a personalized experience and maintains platform security.
+
+2. Property Management
+
+Description:
+Enables hosts to list, update, and manage their properties. Hosts can upload images, set prices, add descriptions, and define availability. This feature ensures that guests can easily browse accurate and up-to-date property listings.
+
+ 3. Booking System
+
+Description:
+Facilitates the reservation process for guests who want to book properties. It handles date selection, availability checks, and booking confirmations. This feature forms the core functionality of the platform, connecting guests with hosts efficiently.
+
+4. Payment Integration
+
+Description:
+Allows guests to make secure online payments for their bookings. It processes payment transactions, stores receipts, and updates booking statuses. This feature ensures financial transparency and convenience for both hosts and guests.
+
+ 5. Review and Rating System
+
+Description:
+Enables guests to leave feedback and ratings after completing their stays. Reviews help future guests make informed decisions and encourage hosts to maintain quality service. This feature enhances trust and credibility on the platform.
+
+6. Search and Filter Functionality
+
+Description:
+Allows users to search for properties based on location, price range, amenities, and availability. This feature helps guests quickly find accommodations that meet their preferences, improving the overall user experience.
+
+7. Admin Dashboard
+
+Description:
+Provides administrators with tools to manage users, properties, and transactions across the platform. Admins can monitor activity, handle disputes, and ensure compliance with platform policies. This feature maintains smooth operation and security of the system.
