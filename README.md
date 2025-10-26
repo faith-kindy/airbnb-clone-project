@@ -20,7 +20,7 @@ Oversees the entire project from planning to deployment. Coordinates the team, t
 Quality Assurance (QA) Tester:
 Tests the system for bugs, performance issues, and usability problems. Ensures all features work as expected before release
 
-#Technology Stack
+# Technology Stack
  1. Django
 
 A high-level Python web framework used to build secure and scalable web applications.
